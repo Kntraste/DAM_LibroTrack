@@ -154,6 +154,7 @@ public class BookController : ControllerBase
 
         var book = _mapper.Map<Book>(bookCreationDTO);
         book.Id = bookExists.Id;
+        book.CreatedBy = bookExists.CreatedBy;
 
         await _bookRepository.UpdateAsync(book.Id, book);
 
