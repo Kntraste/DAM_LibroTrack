@@ -1,0 +1,63 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:userControls="clr-namespace:LibraryUI.Views.UserControls"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <SolidColorBrush x:Key="BackgroundColor">white</SolidColorBrush>
+    <SolidColorBrush x:Key="ButtonBackgroundColor">lightgray</SolidColorBrush>
+    <SolidColorBrush x:Key="DataGridBackgroundColor">white</SolidColorBrush>
+    <SolidColorBrush x:Key="DataGridColHeaderBackgroundColor">#f6f2f2</SolidColorBrush>
+    <SolidColorBrush x:Key="FontColor">black</SolidColorBrush>
+    <SolidColorBrush x:Key="HyperlinkColor">blue</SolidColorBrush>
+    <SolidColorBrush x:Key="BorderColor">black</SolidColorBrush>
+
+    <sys:Double x:Key="FontSize">18</sys:Double>
+
+    <Style TargetType="Window">
+        <Setter Property="Background" Value="{DynamicResource BackgroundColor}" />
+    </Style>
+    <Style TargetType="ContentControl">
+        <Setter Property="Background" Value="{DynamicResource BackgroundColor}" />
+    </Style>
+    <Style TargetType="TextBox">
+        <Setter Property="FontSize" Value="{DynamicResource FontSize}" />
+    </Style>
+    <Style TargetType="TextBlock">
+        <Setter Property="FontSize" Value="{DynamicResource FontSize}" />
+    </Style>
+    <Style TargetType="Hyperlink">
+        <Setter Property="FontSize" Value="{DynamicResource FontSize}" />
+    </Style>
+    <Style TargetType="Button">
+        <Setter Property="Background" Value="{DynamicResource ButtonBackgroundColor}" />
+        <Setter Property="Foreground" Value="{DynamicResource FontColor}" />
+    </Style>
+    <Style TargetType="Label">
+        <Setter Property="FontSize" Value="{DynamicResource FontSize}" />
+        <Setter Property="Foreground" Value="{DynamicResource FontColor}" />
+    </Style>
+    <Style TargetType="DataGrid">
+        <Setter Property="Background" Value="{DynamicResource DataGridBackgroundColor}" />
+        <Setter Property="FontSize" Value="{DynamicResource FontSize}" />
+        <Setter Property="Foreground" Value="{DynamicResource FontColor}" />
+    </Style>
+    <Style TargetType="DataGridCell">
+        <Setter Property="Background" Value="{DynamicResource DataGridBackgroundColor}" />
+        <Setter Property="TextBlock.Foreground" Value="{DynamicResource FontColor}" />
+        <Setter Property="Foreground" Value="{DynamicResource FontColor}" />
+    </Style>
+    <Style TargetType="DataGridColumnHeader">
+        <Setter Property="Background" Value="{DynamicResource DataGridColHeaderBackgroundColor}" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="Foreground" Value="{DynamicResource FontColor}" />
+    </Style>
+    <Style TargetType="Menu">
+        <Setter Property="Background" Value="{DynamicResource ButtonBackgroundColor}" />
+        <Setter Property="FontSize" Value="{DynamicResource FontSize}" />
+    </Style>
+    <Style TargetType="MenuItem">
+        <Setter Property="FontSize" Value="{DynamicResource FontSize}" />
+        <Setter Property="Background" Value="{DynamicResource ButtonBackgroundColor}" />
+        <Setter Property="Foreground" Value="{DynamicResource FontColor}" />
+    </Style>
+</ResourceDictionary>

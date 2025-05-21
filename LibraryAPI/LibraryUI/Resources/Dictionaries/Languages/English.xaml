@@ -1,0 +1,80 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!--Buttons-->
+    <sys:String x:Key="btnUpdate">Update</sys:String>
+    <sys:String x:Key="btnCreate">Create</sys:String>
+    <sys:String x:Key="btnDelete">Delete</sys:String>
+    <sys:String x:Key="btnLogIn">Log In</sys:String>
+    <sys:String x:Key="btnSearch">Search</sys:String>
+
+    <!--Labels-->
+    <sys:String x:Key="lblISBN">ISBN</sys:String>
+    <sys:String x:Key="lblTitle">Title</sys:String>
+    <sys:String x:Key="lblAuthors">Authors</sys:String>
+    <sys:String x:Key="lblAuthor">Author</sys:String>
+    <sys:String x:Key="lblGenres">Genres</sys:String>
+    <sys:String x:Key="lblGenre">Genre</sys:String>
+    <sys:String x:Key="lblPrice">Price</sys:String>
+    <sys:String x:Key="lblMinPrice">Min. price</sys:String>
+    <sys:String x:Key="lblMaxPrice">Max. price</sys:String>
+    <sys:String x:Key="lblYear">Year</sys:String>
+    <sys:String x:Key="lblBYear">Before</sys:String>
+    <sys:String x:Key="lblAYear">After</sys:String>
+    <sys:String x:Key="lblItems">Items</sys:String>
+    <sys:String x:Key="lblConfig">Configuration</sys:String>
+    <sys:String x:Key="lblLang">Language</sys:String>
+    <sys:String x:Key="lblEN">English</sys:String>
+    <sys:String x:Key="lblES">Spanish</sys:String>
+    <sys:String x:Key="lblTheme">Theme</sys:String>
+    <sys:String x:Key="lblDark">Dark</sys:String>
+    <sys:String x:Key="lblLight">Light</sys:String>
+    <sys:String x:Key="lblBooks">Books</sys:String>
+    <sys:String x:Key="lblUsers">Users</sys:String>
+    <sys:String x:Key="lblAbout">About Us</sys:String>
+    <sys:String x:Key="lblLogOut">Log Out</sys:String>
+    <sys:String x:Key="lblExit">Exit</sys:String>
+    <sys:String x:Key="lblEmail">Email</sys:String>
+    <sys:String x:Key="lblPass">Password</sys:String>
+    <sys:String x:Key="lblRole">Role</sys:String>
+    <sys:String x:Key="lblAppTitle">Inventory Management</sys:String>
+    <sys:String x:Key="lblCreatedBy">Created by</sys:String>
+
+    <!--Text Blocks-->
+    <sys:String x:Key="tbInfo">Application made by Manuel Orobitg. All rights reserved.</sys:String>
+    <sys:String x:Key="tbVersion">1.0</sys:String>
+    <sys:String x:Key="tbVYear">2025</sys:String>
+    <sys:String x:Key="tbGithub">To Manuel's Github</sys:String>
+
+    <!--Messages-->
+    <sys:String x:Key="msgCreateBook?">Do you want to create this book?</sys:String>
+    <sys:String x:Key="msgCreateBook">Create a book</sys:String>
+    <sys:String x:Key="msgBookCreated">Book created successfully</sys:String>
+    <sys:String x:Key="msgUpdateBook?">Do you want to update this book?</sys:String>
+    <sys:String x:Key="msgUpdateBook">Update a book</sys:String>
+    <sys:String x:Key="msgBookUpdated">Book updated successfully</sys:String>
+    <sys:String x:Key="msgDeleteBook?">Do you want to delete this book?</sys:String>
+    <sys:String x:Key="msgDeleteBook">Delete a book</sys:String>
+    <sys:String x:Key="msgBookDeleted">Book deleted successfully</sys:String>
+    <sys:String x:Key="msgCreateUser?">Do you want to create this user?</sys:String>
+    <sys:String x:Key="msgCreateUser">Create a user</sys:String>
+    <sys:String x:Key="msgUserCreated">User created successfully</sys:String>
+    <sys:String x:Key="msgUpdateUser?">Do you want to update this user?</sys:String>
+    <sys:String x:Key="msgUpdateUser">Update a user</sys:String>
+    <sys:String x:Key="msgUserUpdated">User updated successfully</sys:String>
+    <sys:String x:Key="msgDeleteUser?">Do you want to delete this user?</sys:String>
+    <sys:String x:Key="msgDeleteUser">Delete a user</sys:String>
+    <sys:String x:Key="msgUserDeleted">User deleted successfully</sys:String>
+
+    <!--Errors' Messages-->
+    <sys:String x:Key="msgDec">Only numbers are accepted. For decimals use "."</sys:String>
+    <sys:String x:Key="msgInt">Only numbers are accepted</sys:String>
+    <sys:String x:Key="msgRole">Role must be 'admin' or 'user'</sys:String>
+    <sys:String x:Key="msgOneFieldFilled">Only one field should be filled at a time, except for range fields</sys:String>
+    <sys:String x:Key="msgBothFieldsFilled">Both fields are required</sys:String>
+    <sys:String x:Key="msgOneFieldEmpty">At least one of the fields must be empty</sys:String>
+    <sys:String x:Key="msgISBNReq">ISBN field is required</sys:String>
+    <sys:String x:Key="msgEmailReq">Email field is required</sys:String>
+    <sys:String x:Key="msgWrongAuth">Invalid user or password</sys:String>
+</ResourceDictionary>

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>0c5efa54-25ef-4cbb-9bbf-8ca2d401962c</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.4" />
+    <PackageReference Include="MongoDB.Driver" Version="3.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LibraryApplication\LibraryApplication.csproj" />
+    <ProjectReference Include="..\LibraryDomain\LibraryDomain.csproj" />
+    <ProjectReference Include="..\LibraryInfrastructure\LibraryInfrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

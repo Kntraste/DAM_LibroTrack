@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="LibraryUI.Views.UserControls.MenuBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:LibraryUI.Views.UserControls"
+             mc:Ignorable="d"
+             d:Height="70" d:DesignWidth="800">
+    <Grid Background="{DynamicResource ButtonBackgroundColor}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+        <Menu>
+            <MenuItem x:Name="miConfiguration" Header="{DynamicResource lblConfig}" Visibility="Collapsed">
+                <MenuItem Header="{DynamicResource lblLang}">
+                    <MenuItem x:Name="miEnglish" Header="{DynamicResource lblEN}" Click="miEnglish_Click" />
+                    <MenuItem x:Name="miSpanish" Header="{DynamicResource lblES}" Click="miSpanish_Click" />
+                </MenuItem>
+                <MenuItem Header="{DynamicResource lblTheme}">
+                    <MenuItem x:Name="miDark" Header="{DynamicResource lblDark}" Click="miDark_Click" />
+                    <MenuItem x:Name="miLight" Header="{DynamicResource lblLight}" Click="miLight_Click" />
+                </MenuItem>
+            </MenuItem>
+            <MenuItem x:Name="miBooks" Header="{DynamicResource lblBooks}" Visibility="Collapsed" Click="miBooks_Click" />
+            <MenuItem x:Name="miUsers" Header="{DynamicResource lblUsers}" Visibility="Collapsed" Click="miUsers_Click" />
+            <MenuItem x:Name="miAboutUs" Header="{DynamicResource lblAbout}" Visibility="Collapsed" Click="miAboutUs_Click" />
+            <MenuItem x:Name="miLogOut" Header="{DynamicResource lblLogOut}" Visibility="Collapsed" Click="miLogOut_Click" />
+            <MenuItem x:Name="miExit" Header="{DynamicResource lblExit}" Click="miExit_Click" />
+        </Menu>
+    </Grid>
+</UserControl>
