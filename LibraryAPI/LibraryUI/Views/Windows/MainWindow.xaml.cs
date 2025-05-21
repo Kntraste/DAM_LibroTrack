@@ -1,6 +1,6 @@
-﻿using System.Windows;
-using LibraryApplication.DTOs;
+﻿using LibraryApplication.DTOs;
 using LibraryUI.Views.UserControls;
+using System.Windows;
 
 namespace LibraryUI.Views.Windows;
 
@@ -28,8 +28,6 @@ public partial class MainWindow : Window
         logInView.OnLogInSuccesful += (sender, userDTO) =>
         {
             currentUser = userDTO;
-
-            ((App)Application.Current).ChangeLanguage(userDTO.Language);
 
             MenuBar.miAboutUs.Visibility = Visibility.Visible;
             MenuBar.miLogOut.Visibility = Visibility.Visible;

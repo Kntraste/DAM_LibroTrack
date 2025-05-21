@@ -131,10 +131,10 @@ public class UserController : ControllerBase
         var user = _mapper.Map<User>(userCreationDTO);
         await _repository.CreateAsync(user);
 
-        _notificationService.SendEmail(
-            destination: user.Email,
-            subject: "User Created",
-            body: "Your user has been created succesfully");
+        //_notificationService.SendEmail(
+        //    destination: user.Email,
+        //    subject: "User Created",
+        //    body: "Your user has been created succesfully");
 
         var userDTO = _mapper.Map<UserDTO>(user);
 
@@ -164,10 +164,10 @@ public class UserController : ControllerBase
         user.Language = userExists.Language;
         user.Theme = userExists.Theme;
 
-        _notificationService.SendEmail(
-            destination: user.Email,
-            subject: "User Updated",
-            body: "Your user has been updated succesfully");
+        //_notificationService.SendEmail(
+        //    destination: user.Email,
+        //    subject: "User Updated",
+        //    body: "Your user has been updated succesfully");
 
         await _repository.UpdateAsync(user.Id, user);
 

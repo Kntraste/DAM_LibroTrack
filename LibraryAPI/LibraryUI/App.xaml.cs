@@ -1,5 +1,5 @@
-﻿using System.Windows;
-using LibraryUI.Views.Windows;
+﻿using LibraryUI.Views.Windows;
+using System.Windows;
 
 namespace LibraryUI;
 
@@ -29,7 +29,7 @@ public partial class App : Application
         var mainWindow = Current.MainWindow as MainWindow;
         var themeDict = new ResourceDictionary();
 
-        if (mainWindow!.currentUser.Theme is null || mainWindow!.currentUser.Theme?.ToLower() == "dark")
+        if (mainWindow!.currentUser!.Theme is null || mainWindow!.currentUser.Theme?.ToLower() == "dark")
         {
             themeDict.Source = new Uri("/Resources/Dictionaries/Themes/Dark.xaml", UriKind.Relative);
             Application.Current.Resources.MergedDictionaries.Add(themeDict);
@@ -62,7 +62,7 @@ public partial class App : Application
         var mainWindow = Current.MainWindow as MainWindow;
         var langDict = new ResourceDictionary();
 
-        if (mainWindow!.currentUser.Language is null || mainWindow!.currentUser.Language?.ToLower() == "english")
+        if (mainWindow!.currentUser!.Language is null || mainWindow!.currentUser.Language?.ToLower() == "english")
         {
             langDict.Source = new Uri("/Resources/Dictionaries/Languages/English.xaml", UriKind.Relative);
             Application.Current.Resources.MergedDictionaries.Add(langDict);
