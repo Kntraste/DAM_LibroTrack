@@ -59,9 +59,9 @@
     <sys:String x:Key="msgCreateUser?">¿Desea crear este usuario?</sys:String>
     <sys:String x:Key="msgCreateUser">Crear un usuario</sys:String>
     <sys:String x:Key="msgUserCreated">Usuario creado con éxito</sys:String>
-    <sys:String x:Key="msgUpdateUser?">¿Desea actualizar este usuario?</sys:String>
-    <sys:String x:Key="msgUpdateUser">Actualizar un usuario</sys:String>
-    <sys:String x:Key="msgUserUpdated">Usuario actualizado con éxito</sys:String>
+    <sys:String x:Key="msgUpdateUser?">¿Desea actualizar este los permisos de este usuario?</sys:String>
+    <sys:String x:Key="msgUpdateUser">Actualizar permisos de usuario</sys:String>
+    <sys:String x:Key="msgUserUpdated">Permisos de usuario actualizados con éxito</sys:String>
     <sys:String x:Key="msgDeleteUser?">¿Desea eliminar este usuario?</sys:String>
     <sys:String x:Key="msgDeleteUser">Eliminar un usuario</sys:String>
     <sys:String x:Key="msgUserDeleted">Usuario eliminado con éxito</sys:String>
